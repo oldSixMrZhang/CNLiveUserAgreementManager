@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CNLiveUserAgreementManager_Example' do
+  pod 'CNLiveUserAgreementManager', :path => '../'
+  target 'CNLiveUserAgreementManager_Tests' do
+    inherit! :search_paths
+
+  end
+end
